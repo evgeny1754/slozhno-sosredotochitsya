@@ -23,7 +23,7 @@
 </head>
 
 <body class="page">
-  <header class="header decorated-zone decorated-border">
+  <header class="header decorated-border">
     <nav class="header__theme-menu">
       <ul class="header__theme-menu-list">
         <li class="header__theme-menu-item">
@@ -45,14 +45,16 @@
       </ul>
     </nav>
     <span class="rec-decoration" aria-hidden="true">rec</span>
-    <h1 class="header__heading text-shadow">no focus</h1>
-    <p class="header__descr title-decor">Что делать, когда не можешь делать ничего <br>
-      Или почему нам так сложно сконцентрироваться, особенно когда очень надо</p>
+    <h1 class="header__heading">no focus</h1>
+    <div class="header__descr title-decor">
+      <p>Что делать, когда не можешь делать ничего</p>
+      <p>Или почему нам так сложно сконцентрироваться, особенно когда очень надо</p>
+    </div>
   </header>
-  
-  <main>
-    <section class="content">
-      <div class="difficult-block side-padding">
+
+  <main class="content">
+
+      <section class="difficult-block side-padding">
         <h2 class="difficult-block__heading block-heading">Почему сосредоточиться так сложно</h2>
         <ul class="difficult-block__list">
           <li class="difficult-block__item">
@@ -60,8 +62,8 @@
             <p class="difficult-block__text item-text">Особенно сложно сосредоточиться, когда задач много и все они —
               важные. Где же легендарная многозадачность, когда она так нужна вам (и всем нанимающим менеджерам этого мира)? 
               А дело в том, что её просто не существует. Исследователи 
-              <a href="https://dana.org/article/multicosts-of-multitasking/" 
-              target="_blank" class="link text-shadow">выяснили</a>,
+              <a class="link text-shadow" href="https://dana.org/article/multicosts-of-multitasking/" 
+              target="_blank" rel="noopener noreferrer">выяснили</a>,
               что мозгу тяжело концентрироваться даже на двух делах
               одновременно. А когда в поле внимания попадает несколько важных задач, организм паникует и выделяет кортизол 
               и адреналин — «гормоны стресса». Из-за этого мы работаем невнимательно: ошибаемся и быстро устаём.</p>
@@ -76,8 +78,8 @@
               Получается замкнутый круг: чем больше отвлекаешься, тем больше удовольствия получаешь.</p>
           </li>
         </ul>
-      </div>
-      <div class="concetration-block side-padding">
+      </section>
+      <section class="concetration-block side-padding">
         <h2 class="concetration-block__heading block-heading">Что снижает концентрацию внимания?</h2>
         <ul class="concetration-block__list">
           <li class="concetration-block__item">
@@ -103,8 +105,8 @@
               гаджетах, тем больше времени затем нужно, чтобы вернуться к работе.</p>
           </li>
         </ul>
-      </div>
-      <div class="how-concetration-block side-padding">
+      </section>
+      <section class="how-concetration-block side-padding">
         <h2 class="how-concetration-block__heading block-heading">Как концентрироваться лучше, чем золотая рыбка (то
           есть дольше трёх секунд) </h2>
         <div class="how-concetration-block__content">
@@ -133,7 +135,7 @@
               <p class="how-concetration-block__text item-text">
                 Или даже пробегитесь. Лучше найти парк или лес: один эксперимент 
                 <a class="link text-shadow"
-                href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328" target="_blank">показал</a>, 
+                href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328" target="_blank" rel="noopener noreferrer">показал</a>, 
                 что созерцание природы повышает концентрацию, в то время как после просмотра
                 городских пейзажей она наоборот понижается. Можно совместить прогулку с физическими упражнениями или 
                 бегом — так в мозг поступит ещё больше кислорода и он будет лучше работать. Но и простая двадцатиминутная 
@@ -158,10 +160,9 @@
             </li>
           </ul>
         </div>
-      </div>
-    </section>
+      </section>
     <section class="gallery side-padding">
-      <h2 class="gallery__heading title-decor">А можно в картинках?</h2>
+      <section class="gallery__heading title-decor">А можно в картинках?</section>
       <div class="gallery__list">
         <img src="./images/sunset.png" alt="Закат с птицами на горизонте" class="gallery__img gallery-grid__big-cell" loading="lazy">
         <img src="./images/ice-cream.png" alt="Мороженное в миске с улыбающимися шариками" class="gallery__img gallery-grid__long-cell" loading="lazy">
@@ -173,7 +174,7 @@
   </main>
 
   <footer class="footer side-padding decorated-border">
-    <h2 class="footer__heading text-shadow">focus</h2>
+    <h2 class="footer__heading">focus</h2>
   </footer>
   <script src="./scripts/script.js"></script>
 </body>
