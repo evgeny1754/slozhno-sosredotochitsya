@@ -116,11 +116,15 @@
 }
 
 .header__theme-menu-button:hover {
-  border-color: var(--theme-btn-color);
+  border-color: var(--theme-btn-hover);
 }
 
 .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--theme-btn-color);
+  outline: none;
+}
+
+.header__theme-menu-button:focus {
   outline: none;
 }
 
@@ -331,9 +335,6 @@
 
 
 @media(max-width: 768px) {
-  .page {
-    --fz-title: clamp(7.25rem, 6.8766rem + 1.2987vw, 7.5rem);
-  }
 
   .header, .footer {
     min-height: 1024px;
@@ -360,6 +361,7 @@
     align-self: center;
     margin-block-start: 0px;
     margin-block-end: 18px;
+    font-size: clamp(7.25rem, 6.8766rem + 1.2987vw, 7.5rem);
   }
 
   .header__descr {
@@ -371,21 +373,12 @@
     gap: 38px;
   }
 
-  .difficult-block__list {
-    gap: 20px;
-  }
-
   .how-concetration-block {
     padding-top: 2px;
   }
 
   .how-concetration-block__content {
     padding-left: 7px;
-  }
-
-  .concetration-block__list {
-    flex-direction: column;
-    gap: 20px;
   }
 
   .concetration-block__item {
@@ -395,7 +388,6 @@
 
   .concetration-block__heading {
     max-width: 237px;
-    margin-bottom: 19px;
   }
 
   .how-concetration-block__heading {
@@ -403,12 +395,12 @@
     max-width: 236px;
   }
 
-  .how-concetration-block__list {
-    gap: 20px;
-  }
-
   .content-list-heading {
     padding-left: 0;
+  }
+
+  .footer__heading {
+    font-size: clamp(7.25rem, 6.8766rem + 1.2987vw, 7.5rem);
   }
 }
 
@@ -452,7 +444,7 @@
 
   .header__heading {
     margin-block-start: 1px;
-    /* line-height: 82.5%; */
+    margin-block-end: 0px;
   }
 
   .header__theme-menu {
@@ -466,10 +458,6 @@
     padding-top: 40px;
   }
 
-  .difficult-block__list {
-    gap: 20px;
-  }
-
   .concetration-block {
     padding-top: 0;
   }
@@ -481,11 +469,6 @@
 
   .concetration-block__heading {
     max-width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .concetration-block__list {
-    gap: 20px;
   }
 
   .how-concetration-block {
@@ -504,7 +487,6 @@
   }
 
   .how-concetration-block__list {
-    gap: 20px;
     padding-left: 0;
   }
 
